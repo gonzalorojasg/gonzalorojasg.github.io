@@ -1,9 +1,210 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Mi Primera Web</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gonzalo Rojas García · Astrofísica</title>
+  <meta name="description" content="Gonzalo Rojas García, doctor en astrofísica. Estrellas binarias eclipsantes, divulgación y docencia en Chile.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <h1>¡Hola Mundo desde GitHub Pages!</h1>
+<body class="lang-es">
+
+  <!-- ============ NAVEGACIÓN ============ -->
+  <header class="nav">
+    <a href="#inicio" class="nav-logo">G. Rojas García</a>
+    <nav>
+      <a href="#investigacion"><span class="es">Investigación</span><span class="en">Research</span></a>
+      <a href="#publicaciones"><span class="es">Publicaciones</span><span class="en">Publications</span></a>
+      <a href="#divulgacion"><span class="es">Divulgación</span><span class="en">Outreach</span></a>
+      <a href="#docencia"><span class="es">Docencia</span><span class="en">Teaching</span></a>
+      <a href="#contacto"><span class="es">Contacto</span><span class="en">Contact</span></a>
+    </nav>
+    <button id="lang-toggle" class="lang-btn" aria-label="Cambiar idioma / Switch language">EN</button>
+  </header>
+
+  <!-- ============ INICIO ============ -->
+  <section id="inicio" class="hero">
+    <div class="hero-text">
+      <p class="eyebrow mono">PhD · Astrophysics</p>
+      <h1>Gonzalo Rojas García</h1>
+      <p class="lead">
+        <span class="es">Astrofísico chileno. Estudio estrellas binarias eclipsantes para medir con precisión la masa, el radio y la edad de las estrellas, y llevo la astronomía a colegios y comunidades.</span>
+        <span class="en">Chilean astrophysicist. I study eclipsing binary stars to measure stellar masses, radii and ages with high precision, and I bring astronomy to schools and communities.</span>
+      </p>
+      <div class="hero-links">
+        <a class="btn" href="#investigacion"><span class="es">Mi investigación</span><span class="en">My research</span></a>
+        <a class="btn btn-ghost" href="#divulgacion"><span class="es">Divulgación</span><span class="en">Outreach</span></a>
+        <!-- Sube tu CV a assets/ y descomenta: -->
+        <!-- <a class="btn btn-ghost" href="assets/CV_Rojas_Garcia.pdf">CV</a> -->
+      </div>
+    </div>
+
+    <!-- Curva de luz de una binaria eclipsante (decorativa) -->
+    <figure class="lightcurve" aria-hidden="true">
+      <svg viewBox="0 0 400 160" preserveAspectRatio="none">
+        <path class="lc-line" d="M0,40 L70,40 C85,40 90,120 100,120 C110,120 115,40 130,40 L250,40 C262,40 266,85 275,85 C284,85 288,40 300,40 L400,40"/>
+        <g class="lc-dots"></g>
+      </svg>
+      <figcaption class="mono">
+        <span class="es">curva de luz · binaria eclipsante</span>
+        <span class="en">light curve · eclipsing binary</span>
+      </figcaption>
+    </figure>
+  </section>
+
+  <!-- ============ SOBRE MÍ ============ -->
+  <section id="sobre-mi" class="section">
+    <div class="about">
+      <!-- Reemplaza por tu foto: guarda assets/foto.jpg y cambia el div por:
+           <img class="avatar" src="assets/foto.jpg" alt="Gonzalo Rojas García"> -->
+      <div class="avatar avatar-placeholder">GR</div>
+      <div>
+        <h2><span class="es">Sobre mí</span><span class="en">About me</span></h2>
+        <p>
+          <span class="es">Me doctoré en el Centro Astronómico Nicolás Copérnico (CAMK, Polonia) con una tesis sobre binarias eclipsantes desprendidas evolucionadas en la Gran Nube de Magallanes, dentro del Proyecto Araucaria. Hoy soy docente en la Universidad de Las Américas (UDLA) y participo en el PLATO Multiple Star Working Group y en el equipo Time Domain de WST.</span>
+          <span class="en">I earned my PhD at the Nicolaus Copernicus Astronomical Center (CAMK, Poland) with a thesis on evolved detached eclipsing binaries in the Large Magellanic Cloud, as part of the Araucaria Project. I currently teach at Universidad de Las Américas (UDLA) and I am a member of the PLATO Multiple Star Working Group and the WST Time Domain team.</span>
+        </p>
+        <ul class="timeline">
+          <li><span class="mono">2019–2026</span> PhD, CAMK (Polonia / Poland)</li>
+          <li><span class="mono">2017–2019</span> <span class="es">Magíster en Física</span><span class="en">M.Sc. Physics</span>, Universidad de Concepción</li>
+          <li><span class="mono">2013–2016</span> <span class="es">Licenciatura en Astronomía</span><span class="en">B.Sc. Astronomy</span>, Universidad de Concepción</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INVESTIGACIÓN ============ -->
+  <section id="investigacion" class="section">
+    <h2><span class="es">Investigación</span><span class="en">Research</span></h2>
+    <div class="cards">
+      <article class="card">
+        <h3><span class="es">Binarias eclipsantes gigantes</span><span class="en">Giant eclipsing binaries</span></h3>
+        <p>
+          <span class="es">Cuando dos estrellas se eclipsan mutuamente, su curva de luz y sus velocidades radiales permiten medir masas y radios casi sin depender de modelos. Trabajo con sistemas de gigantes tardías en la Gran Nube de Magallanes.</span>
+          <span class="en">When two stars eclipse each other, their light curve and radial velocities yield masses and radii almost independently of models. I work on late-type giant systems in the Large Magellanic Cloud.</span>
+        </p>
+      </article>
+      <article class="card">
+        <h3><span class="es">Calibración para PLATO</span><span class="en">Benchmarks for PLATO</span></h3>
+        <p>
+          <span class="es">Busco usar binarias eclipsantes evolucionadas como estándares de referencia para la misión espacial PLATO, combinando modelado orbital con asterosismología.</span>
+          <span class="en">I aim to use evolved eclipsing binaries as reference benchmarks for the PLATO space mission, combining orbital modelling with asteroseismology.</span>
+        </p>
+      </article>
+      <article class="card">
+        <h3><span class="es">Herramientas</span><span class="en">Tools</span></h3>
+        <p class="tags">
+          <span>Python</span><span>Jupyter</span><span>Wilson-Devinney</span><span>JKTEBOP</span><span>LaTeX</span><span>Linux</span>
+        </p>
+        <p>
+          <span class="es">Observaciones en Las Campanas, CTIO y OCA (comisionamiento de telescopio).</span>
+          <span class="en">Observing experience at Las Campanas, CTIO and OCA (telescope commissioning).</span>
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PUBLICACIONES ============ -->
+  <section id="publicaciones" class="section">
+    <h2><span class="es">Publicaciones</span><span class="en">Publications</span></h2>
+    <ol class="pubs">
+      <li>
+        <strong>Rojas García, G.</strong>, Graczyk, D., Pietrzyński, G., et al. (2024).
+        <em>Precise physical parameters of three late-type eclipsing binary giant stars in the Large Magellanic Cloud.</em>
+        A&amp;A, 692, A110.
+        <span class="pub-links">
+          <a href="https://doi.org/10.1051/0004-6361/202451720">DOI</a>
+          <a href="https://arxiv.org/abs/2410.18619">arXiv</a>
+        </span>
+      </li>
+      <!-- Agrega más publicaciones copiando el bloque <li> de arriba -->
+    </ol>
+    <!-- Cuando tengas tu perfil de ADS u ORCID, reemplaza el href: -->
+    <p class="muted">
+      <a href="https://ui.adsabs.harvard.edu/" class="link-arrow">
+        <span class="es">Lista completa en NASA ADS</span><span class="en">Full list on NASA ADS</span> →
+      </a>
+    </p>
+  </section>
+
+  <!-- ============ DIVULGACIÓN ============ -->
+  <section id="divulgacion" class="section section-alt">
+    <h2><span class="es">Divulgación</span><span class="en">Outreach</span></h2>
+    <p class="lead-sm">
+      <span class="es">Chile tiene los cielos más importantes del mundo para la astronomía, pero muchos colegios y comunas nunca han mirado por un telescopio. Mi objetivo es acercar la ciencia a esas comunidades.</span>
+      <span class="en">Chile hosts the world's most important skies for astronomy, yet many schools and communities have never looked through a telescope. My goal is to bring science to them.</span>
+    </p>
+    <div class="cards">
+      <article class="card">
+        <h3><span class="es">Colegios</span><span class="en">Schools</span></h3>
+        <p>
+          <span class="es">Charlas y talleres para estudiantes de enseñanza media.</span>
+          <span class="en">Talks and workshops for high-school students.</span>
+        </p>
+      </article>
+      <article class="card">
+        <h3><span class="es">Comunidades</span><span class="en">Communities</span></h3>
+        <p>
+          <span class="es">Observaciones astronómicas abiertas junto a municipios.</span>
+          <span class="en">Public stargazing nights in partnership with municipalities.</span>
+        </p>
+      </article>
+      <article class="card">
+        <h3><span class="es">Redes sociales</span><span class="en">Social media</span></h3>
+        <p>
+          <span class="es">Contenido de astronomía en español, claro y riguroso.</span>
+          <span class="en">Clear, accurate astronomy content in Spanish.</span>
+        </p>
+        <!-- Pon tu usuario de Instagram: -->
+        <a class="link-arrow" href="https://instagram.com/TU_USUARIO">Instagram →</a>
+      </article>
+    </div>
+    <!-- Para agregar una actividad con foto, copia este bloque:
+    <article class="event">
+      <img src="assets/evento1.jpg" alt="Descripción de la foto">
+      <div>
+        <p class="mono">2026 · Comuna</p>
+        <h3>Nombre de la actividad</h3>
+        <p>Qué se hizo y con quién.</p>
+      </div>
+    </article>
+    -->
+  </section>
+
+  <!-- ============ DOCENCIA ============ -->
+  <section id="docencia" class="section">
+    <h2><span class="es">Docencia</span><span class="en">Teaching</span></h2>
+    <div class="cards">
+      <article class="card">
+        <p class="mono muted">UDLA</p>
+        <h3><span class="es">Biofísica</span><span class="en">Biophysics</span></h3>
+      </article>
+      <article class="card">
+        <p class="mono muted">UDLA</p>
+        <h3><span class="es">Habilidades Digitales</span><span class="en">Digital Skills</span></h3>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section id="contacto" class="section contact">
+    <h2><span class="es">Contacto</span><span class="en">Contact</span></h2>
+    <div class="contact-links">
+      <!-- Completa con tus datos reales -->
+      <a href="mailto:TU_CORREO@ejemplo.com">Email</a>
+      <a href="https://github.com/gonzalorojasg">GitHub</a>
+      <a href="https://orcid.org/TU_ORCID">ORCID</a>
+      <a href="https://www.linkedin.com/in/TU_USUARIO">LinkedIn</a>
+    </div>
+  </section>
+
+  <footer class="footer mono">
+    © <span id="year"></span> Gonzalo Rojas García
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
